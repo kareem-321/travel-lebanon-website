@@ -1,0 +1,117 @@
+/* ===== MORE PAGE (About + Suggest a place) ===== */
+
+.more-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* ---------- About card / Suggest card wrapper ---------- */
+/* Header of "Suggest a place" with Show/Hide button on the right */
+.more-suggest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.more-toggle-btn {
+  white-space: nowrap;
+}
+
+/* ---------- FORM STYLING ---------- */
+
+.more-form .form-label {
+  font-weight: 500;
+}
+
+/* Light theme inputs */
+.more-form .form-control,
+.more-form .form-select,
+.more-form textarea {
+  border-radius: 0.6rem;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* Dark theme inputs */
+.dark-theme .more-form .form-control,
+.dark-theme .more-form .form-select,
+.dark-theme .more-form textarea {
+  border-color: #4b5563;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* Dark theme labels */
+.dark-theme .more-form .form-label {
+  color: #e5e7eb;
+}
+
+/* Placeholders – make them visible in dark mode */
+.more-form input::placeholder,
+.more-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+.dark-theme .more-form input::placeholder,
+.dark-theme .more-form textarea::placeholder {
+  color: #9ca3ff; /* light bluish gray */
+}
+
+/* Focus states – makes the form feel more alive */
+.more-form .form-control:focus,
+.more-form .form-select:focus,
+.more-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 0.15rem rgba(37, 99, 235, 0.25);
+  outline: none;
+}
+
+.dark-theme .more-form .form-control:focus,
+.dark-theme .more-form .form-select:focus,
+.dark-theme .more-form textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 0.15rem rgba(56, 189, 248, 0.35);
+}
+
+/* Submit button */
+.more-form .btn-primary {
+  border-radius: 999px;
+  padding-inline: 1.3rem;
+}
+
+/* ---------- TABLE OF SUGGESTIONS ---------- */
+
+.more-table-wrapper {
+  margin-top: 1.4rem;
+}
+
+.more-table-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.more-table {
+  font-size: 0.85rem;
+  border-color: var(--card-border);
+}
+
+.more-table thead {
+  background: #f3f4f6;
+}
+
+.dark-theme .more-table thead {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.more-table-link a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.more-table-link a:hover {
+  text-decoration: underline;
+}
